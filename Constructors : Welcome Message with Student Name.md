@@ -1,29 +1,28 @@
-# NumPy Program: Column-wise Sorting of a 2D Array
+# # Constructors in Python: Welcome Message with Student Name
 
 ## 🎯 Aim
-To write a **NumPy** program that sorts the elements in each column of a given 2D array in ascending order.
+To write a Python program that creates a **Student** class with a **default constructor** and a method to display a welcome message along with the student’s name provided by the user.
 
 ## 🧠 Algorithm
-
-1. **Import NumPy**: Start by importing the NumPy library.
-2. **Get Input**: Accept a 2D NumPy array from the user.
-3. **Sort Column-wise**: Use the `np.sort()` function with `axis=0` to sort each column in ascending order.
-4. **Store Result**: Store the sorted result in a new array.
-5. **Display Output**: Print the original array and the column-wise sorted array.
+1. **Get user input**: Accept the student's name from the user.
+2. **Define the class**: Create a class `Student` with a default constructor (`__init__`).
+3. **Default Constructor**: In the constructor, assign the user input (student name) to an instance variable `self.a`.
+4. **Display Message**: Define a method `show` that prints "This is non-parameterized constructor" and a welcome message with the student’s name.
+5. **Execute the Program**: Instantiate the `Student` class and call the `show` method.
 
 ## 🧾 Program
 ```
-import numpy as np
-arr=np.array(eval(input()))
-print("Given array")
-print(arr)
-print()
-print(np.sort(arr,axis=0))
-
+class student:
+    def __init__(self):
+        print("This is non parametrized constructor")
+    def display_welcome(self,name):
+        print(f"Hello {name}")
+name=input()
+studentinstance=student()
+studentinstance.display_welcome(name)
 ```
 ## Output
-<img width="934" height="390" alt="image" src="https://github.com/user-attachments/assets/dd0a6253-2ead-4f61-916b-abcd5e56bde6" />
-
+<img width="838" height="220" alt="517439870-1e27d533-20b2-446d-918a-066f0218b016" src="https://github.com/user-attachments/assets/64f7cc54-2b03-46e5-84ab-83d63a62798a" />
 
 ## Result
-The program executed successfully, sorting the elements of the array column-wise in ascending order. The original array and the sorted array were both displayed.
+Thus the output is Verified.
